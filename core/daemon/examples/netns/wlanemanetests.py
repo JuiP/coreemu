@@ -149,7 +149,7 @@ class Cmd(object):
         self.err.close()
         tmp = self.id.wait()
         if tmp:
-            self.warn("nonzero exit status:", tmp)
+            self.warn("nonzero exit status: "+str(tmp))
 
 
 class ClientServerCmd(Cmd):
